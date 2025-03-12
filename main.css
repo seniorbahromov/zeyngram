@@ -18,7 +18,7 @@ ul {
 
 .main-header {
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0;
     background-color: #f8f8f8; /* Orqa fon rangi (istalgan rang) */
@@ -115,7 +115,7 @@ ul {
 
 .main-footer {
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     bottom: 0; /* Footer pastda turishi uchun */
     width: 100%; /* To‘liq ekran bo‘ylab */
     background-color: #f8f8f8; /* Orqa fon rangi (istalgan rang) */
