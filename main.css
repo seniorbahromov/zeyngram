@@ -1,0 +1,182 @@
+body {
+    width: 1140px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.main-header {
+    display: flex;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    background-color: #f8f8f8; /* Orqa fon rangi (istalgan rang) */
+    padding: 10px 0;
+}
+
+.main-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.main-navigation__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 3rem;
+    padding: 0;
+}
+
+.main-navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.main-section__lists {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* width: 250px;
+    gap: 10px; */
+    width: 100%;
+
+}
+
+/* .main-section__stories {
+    background-color: aqua;
+    width: 5rem;
+    height: 5rem;
+    padding: 5px;
+} */
+
+.main-section__stories-border {
+    width: 4rem;
+    height: 4rem;
+    background-color: chartreuse;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.main-section__stories {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    width: 90px; /* Kenglikni cheklash */
+    overflow: hidden;
+}
+.main-section__stories-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.main-section__stories-photo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main-section__lists {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+
+
+
+.main-section__stories {
+    display: flex;
+    flex-direction: column; /* Elementlarni ustun shaklida joylash */
+    align-items: center; /* Gorizontal markazlash */
+    justify-content: center; /* Vertikal markazlash */
+    /* height: 200px; Kerakli balandlik */
+}
+
+
+
+.main-section__stories-description {
+    margin: 0;
+} 
+
+.main-footer {
+    display: flex;
+    /* position: fixed; */
+    bottom: 0; /* Footer pastda turishi uchun */
+    width: 100%; /* To‘liq ekran bo‘ylab */
+    background-color: #f8f8f8; /* Orqa fon rangi (istalgan rang) */
+    padding: 10px 0;
+}
+
+.main-footer__lists {
+    display: flex;
+    justify-content: space-between; /* Ikonkalarni butunlay yoyish */
+    align-items: center;
+    width: 100%; /* To‘liq kenglikni egallash */
+    padding: 0 20px; /* Chap va o‘ng tomondan biroz bo‘sh joy */
+    list-style: none;
+}
+
+.main-footer__list {
+    flex: 1; /* Har bir element teng kenglik egallasin */
+    text-align: center; /* Ikonlarni markazga olish */
+}
+
+.main-footer__list i {
+    font-size: 24px; /* Ikonkalarni kattalashtirish */
+}
+
+.main-posts {
+    width: 100%;
+}
+
+.main-post__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-post__left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-post__logo {
+    width: 15px;
+    height: 15px;
+}
+
+.main-post__content img {
+    width: 100%;
+}
+
+.main-post__reactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-post__reactions-lists {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 5px; */
+    padding: 0;
+}
+
+.main-post__reactions-list  {
+    margin: 5px;
+}
