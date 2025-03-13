@@ -67,8 +67,8 @@ ul {
 } */
 
 .main-section__stories-border {
-    width: 4rem;
-    height: 4rem;
+    width: 66px;
+    height: 66px;
     background-color: chartreuse;
     border: 1px solid red;
     border-radius: 50%;
