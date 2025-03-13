@@ -184,7 +184,7 @@ ul {
     margin: 5px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     .container {
         width: 320px
     }
