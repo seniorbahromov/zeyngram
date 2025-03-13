@@ -164,3 +164,8 @@ console.log(tir)
         });
     });
 
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".main-post__logo-img").forEach((img, index) => {
+            img.src =`https://picsum.photos/15/15?random=${Math.random()}`;
+        });
+    });
