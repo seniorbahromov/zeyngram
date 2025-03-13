@@ -1,70 +1,81 @@
-body {
-    width: 1140px;
+/* 
+
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .container {
-    width: 1140px;
-    margin: 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-ul {
-    list-style: none;
-}
-
+/* Header */
 .main-header {
-    display: flex;
-    /* position: fixed; */
-    width: 100%;
-    top: 0;
-    background-color: #f8f8f8; /* Orqa fon rangi (istalgan rang) */
+    background-color: #fff;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 50px; */
 }
 
 .main-header__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-
+    align-items: center;
 }
 
 .main-navigation__lists {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 3rem;
-    /* padding: 0;
-    padding-left: 0;
-    margin: 0   ; */
+    list-style: none;
 }
 
-.main-navigation__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 15px; */
+.main-navigation__list a {
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+/* Stories Section */
+
+.main-section {
+    margin-top: 110px;
 }
 
 .main-section__lists {
+    display: flex;
     overflow-x: auto;
-    scroll-behavior: smooth;
-    /* width: 250px;
-    gap: 10px; */
-    width: 100%;
-    padding: 0;
-
+    list-style: none;
+    padding: 10px 0;
+    gap: 10px;
 }
 
-/* .main-section__stories {
-    background-color: aqua;
-    width: 5rem;
-    height: 5rem;
-    padding: 5px;
-} */
+.main-section__list {
+    flex: 0 0 auto;
+}
+
+.main-section__stories {
+    text-align: center;
+    /* overflow: hidden; */
+    width: 66px;
+    height: 66px;
+
+}
 
 .main-section__stories-border {
     width: 66px;
@@ -74,14 +85,13 @@ ul {
     border-radius: 50%;
 }
 
-.main-section__stories {
-    display: flex;
-    /* background-color: aqua; */
-    justify-content: center;
-    align-items: center;
-    width: 90px; /* Kenglikni cheklash */
-    overflow: hidden;
+
+.main-section__stories-photo {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
+
 .main-section__stories-description {
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -89,32 +99,68 @@ ul {
     max-width: 100%;
 }
 
-.main-section__stories-photo {
-    width: 100%;
-    border-radius: 50%;
+/* Posts */
+.main-posts {
+    margin-top: 80px;
 }
 
-.main-section__lists {
+.main-post {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main-post__top {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: column; */
 }
 
-
-
-.main-section__stories {
+.main-post__left {
     display: flex;
-    flex-direction: column; /* Elementlarni ustun shaklida joylash */
-    align-items: center; /* Gorizontal markazlash */
-    justify-content: center; /* Vertikal markazlash */
-    /* height: 200px; Kerakli balandlik */
+    justify-content: space-between;
+    align-items: center;
 }
 
+.main-post__logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 5px 7px 5px 0px;
+}
 
+.main-post__logo img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
 
-.main-section__stories-description {
-    margin: 0;
-} 
+/* .main-post__settings {
+    width: 35px;
+    height: 35px;
+} */
+
+.main-post__content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-post__reactions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.main-post__reactions-lists {
+    display: flex;
+    list-style: none;
+}
+
+.main-post__reactions-list {
+    padding: 5px;
+    font-size: 20px;
+}
 
 .main-footer {
     display: flex;
@@ -143,106 +189,34 @@ ul {
     font-size: 24px; /* Ikonkalarni kattalashtirish */
 }
 
-.main-posts {
-    width: 100%;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-navigation__lists {
+        margin-top: 10px;
+    }
+
+    .main-section__lists {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
 }
 
-.main-post__top {
-    display: flex;
-    justify-content: space-between;
-}
-
-.main-post__left {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.main-post__logo {
-    width: 15px;
-    height: 15px;
-}
-
-.main-post__content img {
-    width: 100%;
-}
-
-.main-post__reactions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main-post__reactions-lists {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 5px; */
-    padding: 0;
-}
-
-.main-post__reactions-list  {
-    margin: 5px;
-}
-
-@media screen and (max-width: 320px) {
+@media (max-width: 480px) {
     .container {
-        max-width: 320px
+        width: 100%;
+        padding: 0 10px;
     }
 
     .main-header {
-        max-width: 320px;
+        padding: 5px 0;
     }
 
-    .main-section {
-        max-width: 320px;
-    }
-
-    .main-posts {
-        max-width: 320px;
-    }
-
-    .main-post__content {
-        max-width: 320px%;
-    }
-
-    .main-post__content img {
-        max-width: 320px;
-        height: 300px;
-    }
-
-    .main-footer {
-        max-width: 320px;
+    .main-post__text p {
+        font-size: 14px;
     }
 }
-
-@media screen and (max-width: 420px) {
-    .container {
-        max-width: 420px:
-    }
-
-    .main-header {
-        max-width: 420px;
-    }
-
-    .main-section {
-        max-width: 420px;
-    }
-
-    .main-posts {
-        max-width: 420px;
-    }
-
-    .main-post__content {
-        max-width: 420px;
-    }
-
-    .main-post__content img {
-        max-width: 420px;
-        height: 300px;
-    }
-
-    .main-footer {
-        max-width: 420px;
-    }
-}
-
