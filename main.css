@@ -214,3 +214,35 @@ ul {
         width: 320px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 320px
+    }
+
+    .main-header {
+        width: 320px;
+    }
+
+    .main-section {
+        width: 320px;
+    }
+
+    .main-posts {
+        width: 320px;
+    }
+
+    .main-post__content {
+        width: 320px%;
+    }
+
+    .main-post__content img {
+        width: 320px;
+        height: 300px;
+    }
+
+    .main-footer {
+        width: 320px;
+    }
+}
+
