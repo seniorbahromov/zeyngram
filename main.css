@@ -184,33 +184,33 @@ ul {
     margin: 5px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 320px) {
     .container {
-        /* width: 100; */
+        width: 320px
     }
 
     .main-header {
-        width: 600px;
+        width: 320px;
     }
 
     .main-section {
-        width: 600px;
+        width: 320px;
     }
 
     .main-posts {
-        width: 600px;
+        width: 320px;
     }
 
     .main-post__content {
-        width: 600px;
+        width: 320px%;
     }
 
     .main-post__content img {
-        width: 100%;
+        width: 320px;
         height: 300px;
     }
 
     .main-footer {
-        width: 600px;
+        width: 320px;
     }
 }
